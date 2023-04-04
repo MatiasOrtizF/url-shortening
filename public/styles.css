@@ -1,0 +1,150 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    /*Primary */
+--cyan: hsl(180, 66%, 49%);
+--darkViolet: hsl(257, 27%, 26%);
+
+    /*Secondary */
+--red: hsl(0, 87%, 67%);
+
+    /*Neutral */
+--gray: hsl(0, 0%, 75%);
+--grayishViolet: hsl(257, 7%, 63%);
+--veryDarkBlue: hsl(255, 11%, 22%);
+--veryDarkViolet: hsl(260, 8%, 14%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    height: 100vh;
+    padding: 25px 20px;
+    text-align: center;
+    background-color: rgb(241, 241, 241);
+}
+
+footer {
+    background-color: var(--veryDarkViolet);
+    color: white;
+    padding: 40px;
+}
+
+li {
+    list-style: none;
+}
+
+ul {
+    padding: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--grayishViolet);
+}
+
+p {
+    color: var(--grayishViolet);
+}
+
+button {
+    font-size: 18px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: var(--cyan);
+    color: white;
+    border-style: none;
+    width: 180px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 10px;
+    border-style: none;
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.illustration-work {
+    width: 100%;
+}
+
+.acortador {
+    margin: 75px 0px;
+    background-color: rgb(78, 29, 78);
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.acortador button {
+    border-radius: 5px;
+    width: 100%;
+}
+
+.url-no-acortada {
+    text-align: left;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 1px;
+    padding: 15px;
+}
+#acortada {
+    color: var(--cyan);
+}
+
+.url-acortada {
+    text-align: left;
+    background-color: white;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 10px;
+}
+
+.url-acortada button {
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 10px;
+}
+.estadisticas-avanzadas {
+    padding: 75px 0px;
+}
+
+.estadisticas {
+    background-color: white;
+    margin-bottom: 25px;
+    padding: 30px;
+}
+.estadisticas img {
+    background-color: var(--darkViolet);
+    padding: 20px;
+    border-radius: 100%;
+}
+
+.boost {
+    padding: 55px 0px;
+    background-color: rgb(78, 29, 78);
+    color: white;
+}
+.boost h3 {
+    margin-bottom: 10px;
+}
+
+.redes {
+
+}
+
+
+.hidden {
+    display: none;
+}
+
+.copied {
+    background-color: var(--darkViolet);
+}

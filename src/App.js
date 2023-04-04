@@ -1,23 +1,45 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import UrlAcortada from './UrlAcortada';
+import { useEffect } from 'react';
+
 
 function App() {
+
+  useEffect(() => {
+      
+  }, []);
+    const[datas, setDatas] = useState([]);
+
+  
+    const filtrarPorRegiones = () => {
+        fetch("https://api.shrtco.de/v2/shorten?url=www.frontendmentor.io")
+        .then(response => response.json())
+        .then(data => {
+            const urlActualizadas = [data.result.short_link, ...datas]
+            setDatas(urlActualizadas);
+        })
+    }
+  
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+
+    <button onClick={filtrarPorRegiones}>Emviar</button>
+        <div className="acortador">
+            <input id="acortador" type="text" placeholder="Shorten a link here..."/>
+            <button>Shorten It!</button>
+        </div>
+            {datas.map(data=> 
+                        <UrlAcortada
+                        noAcortada = {data}
+                        acortada = {data}
+                        >      
+                        </UrlAcortada>    
+            )}
+        
+        
     </div>
   );
 }

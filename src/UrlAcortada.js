@@ -82,7 +82,7 @@ export default function UrlAcortada () {
                 )}
             </main>
 
-            <footer>Pagina web By: <a target="_blank" href="https://matiasortizf.github.io/portafolio/">Matias Ortiz</a></footer>
+            <footer><p>Pagina web By: <a target="_blank" href="https://matiasortizf.github.io/portafolio/">Matias Ortiz</a></p></footer>
         </>
     )
 } 

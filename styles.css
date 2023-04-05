@@ -32,13 +32,10 @@ footer {
     color: white;
     padding: 25px;
 }
-
-li {
-    list-style: none;
-}
-
-ul {
-    padding: 10px;
+footer p{
+    background-color: var(--veryDarkViolet);
+    color: white;
+    padding: 25px;
 }
 
 a {
@@ -58,6 +55,7 @@ button {
     color: white;
     border-style: none;
     width: 180px;
+    cursor: pointer;
 }
 
 input {
@@ -89,7 +87,6 @@ header button {
     width: 100%;
 }
 
-
 .acortador {
     margin-bottom: 40px;
     background-color: rgb(78, 29, 78);
@@ -114,15 +111,13 @@ header button {
     margin-bottom: 1px;
     padding: 15px;
 }
-#acortada {
-    color: var(--cyan);
-}
 
 .url-acortada {
     text-align: left;
     background-color: white;
     border-radius: 5px;
     padding: 15px;
+    color: var(--cyan);
 }
 
 .url-acortada button {
@@ -131,39 +126,99 @@ header button {
     width: 100%;
     margin-top: 10px;
 }
-.estadisticas-avanzadas {
-    padding: 75px 0px;
-}
-
-.estadisticas {
-    background-color: white;
-    margin-bottom: 25px;
-    padding: 30px;
-}
-.estadisticas img {
-    background-color: var(--darkViolet);
-    padding: 20px;
-    border-radius: 100%;
-}
-
-.boost {
-    padding: 55px 0px;
-    background-color: rgb(78, 29, 78);
-    color: white;
-}
-.boost h3 {
-    margin-bottom: 10px;
-}
-
-.redes {
-
-}
-
-
-.hidden {
-    display: none;
-}
 
 .copied {
     background-color: var(--darkViolet);
+}
+
+
+/* medias */
+@media (min-width:768px) {
+    .container {
+        padding: 25px;
+    }
+    .grid {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row-reverse;
+    }
+    .grid img {
+        width: 50%;
+        margin-left: 55px;
+    }
+    .grid-text {
+        text-align: left;
+        margin-top: 4.6em;
+    }
+    .grid-text h1 {
+        font-size: 2.2em;
+    }
+    .acortador {
+        display: flex;
+        padding: 35px;
+    }
+    .acortador button {
+        width: 300px;
+        margin: 0px 0px 0px 20px;
+    }
+    .box {
+        display: flex;
+        background-color: white;
+        justify-content: space-between;
+        padding: 10px 20px;
+        /* Arriba | Derecha | Abajo | Izquierda */
+    }
+    .url-no-acortada {
+        padding: 0px;
+        display: flex;
+        align-items: center;
+    }
+    .url-acortada {
+        display: flex;
+        align-items: center;
+        padding: 0px;
+    }
+    .url-acortada button {
+        padding: 7px;
+        width: 100px;
+        margin: 0px 0px 0px 20px;
+    }
+}
+
+@media (min-width:960px) {
+    .container {
+        padding: 25px 20px;
+    }
+    .grid {
+        margin-top: 55px;
+        margin-left: 4em;
+    }
+    .grid-text h1 {
+        font-size: 2.7em;
+    }
+    .acortador {
+        margin: 40px 4em;
+    }
+    .box {
+        /* Arriba | Derecha | Abajo | Izquierda */
+        margin: 0px 4em 15px 4em;
+    }
+}
+
+
+@media (min-width:1440px) {
+    .grid {
+        margin-top: 55px;
+        margin-left: 7em;
+    }
+    .grid-text h1 {
+        font-size: 4em;
+    }
+    .acortador {
+        margin: 40px 7em;
+    }
+    .box {
+        /* Arriba | Derecha | Abajo | Izquierda */
+        margin: 0px 7em 15px 7em;
+    }
 }

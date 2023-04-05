@@ -28,18 +28,23 @@ export default function UrlAcortada () {
     return(
         <>            
             <header className="container">
-                <img src="images/logo.svg" alt=""/>
+                <nav>
+                    <img src="images/logo.svg" alt=""/>
+                </nav>
 
-                <img className="illustration-work" src="images/illustration-working.svg" alt=""/>
+                <div className="grid">
+                    <img className="illustration-work" src="images/illustration-working.svg" alt=""/>
+                    <div className="grid-text">
+                        <h1>More than just shorter links</h1>
 
-                <h1>More than just shorter links</h1>
+                        <p>
+                            Build your brand’s recognition and get detailed insights 
+                            on how your links are performing.
+                        </p>
 
-                <p>
-                    Build your brand’s recognition and get detailed insights 
-                    on how your links are performing.
-                </p>
-
-                <button>Get Started</button>
+                        <button>Get Started</button>
+                    </div>
+                </div>
             </header>
 
             <main className="container">

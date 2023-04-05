@@ -7,29 +7,6 @@ export default function UrlAcortada () {
 
     const[tareas, setTareas] = useState([]);
 
-    const parrafo = document.querySelector("warnings");
-    const copys = document.querySelectorAll(".copy");
-
-    copys.forEach(copy => {
-        copy.addEventListener("click", e=> {
-            removeCopy();
-            navigator.clipboard.writeText(copy.parentNode.children[0].innerHTML);
-            console.log(copy.parentNode.children[0].innerHTML);
-            copy.innerHTML="Copied!";
-            copy.classList.add("copied");
-        })
-    })
-    
-    function removeCopy() {
-        copys.forEach(copy=> {
-            if(copy.classList.contains("copied")) {
-                copy.classList.remove("copied");
-                copy.innerHTML="Copy";
-            }
-        })
-    } 
-    
-
     const callApi = () => {
 
     const input = document.getElementById("input");
@@ -46,6 +23,7 @@ export default function UrlAcortada () {
         const tareasActualizadas = [tareaNueva, ...tareas];
         setTareas(tareasActualizadas);
     })
+
 }
     return(
         <>            
@@ -64,7 +42,7 @@ export default function UrlAcortada () {
                 <button>Get Started</button>
             </header>
 
-            <main>
+            <main className="container">
                 <div className="acortador">
                     <input id="input" type="text" placeholder="Shorten a link here..."/>
                     <p className="warnings"></p>

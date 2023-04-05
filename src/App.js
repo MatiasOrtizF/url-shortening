@@ -9,9 +9,7 @@ function App() {
 
 
   return (
-    <div>
-                          <UrlAcortada></UrlAcortada>    
-    </div>
+          <UrlAcortada></UrlAcortada>    
   );
 }
 

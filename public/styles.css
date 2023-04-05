@@ -23,7 +23,6 @@ body {
     font-family: 'Poppins', sans-serif;
     font-size: 18px;
     height: 100vh;
-    padding: 25px 20px;
     text-align: center;
     background-color: rgb(241, 241, 241);
 }
@@ -31,7 +30,7 @@ body {
 footer {
     background-color: var(--veryDarkViolet);
     color: white;
-    padding: 40px;
+    padding: 25px;
 }
 
 li {
@@ -65,18 +64,34 @@ input {
     padding: 10px;
     border-radius: 10px;
     border-style: none;
-    margin-bottom: 20px;
     width: 100%;
     font-size: 18px;
     padding: 15px;
+}
+
+.warnings {
+    margin-top: 5px;
+    color: var(--red);
+    text-align: left;
+    font-size: 13px;
+}
+
+header button {
+    margin-top: 20px;
+    border-radius: 40px;
+}
+
+.container {
+    padding: 25px 20px;
 }
 
 .illustration-work {
     width: 100%;
 }
 
+
 .acortador {
-    margin: 75px 0px;
+    margin-bottom: 40px;
     background-color: rgb(78, 29, 78);
     border-radius: 10px;
     padding: 20px;
@@ -85,6 +100,11 @@ input {
 .acortador button {
     border-radius: 5px;
     width: 100%;
+    margin-top: 15px;
+}
+
+.box {
+    margin-bottom: 40px;
 }
 
 .url-no-acortada {
@@ -103,7 +123,6 @@ input {
     background-color: white;
     border-radius: 5px;
     padding: 15px;
-    margin-bottom: 10px;
 }
 
 .url-acortada button {

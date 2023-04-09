@@ -30,7 +30,6 @@ body {
 footer {
     background-color: var(--veryDarkViolet);
     color: white;
-    padding: 25px;
 }
 footer p{
     background-color: var(--veryDarkViolet);
@@ -154,12 +153,20 @@ header button {
         font-size: 2.2em;
     }
     .acortador {
-        display: flex;
+        display: grid;
+        grid-template-columns: 75% 25%;
         padding: 35px;
     }
     .acortador button {
-        width: 300px;
-        margin: 0px 0px 0px 20px;
+        width: 100%;
+        margin-top: 0px;
+        margin-bottom: 26px;
+    }
+    .input-url {
+        margin-right: 20px;
+    }
+    .warnings {
+        font-size: 15px;
     }
     .box {
         display: flex;
